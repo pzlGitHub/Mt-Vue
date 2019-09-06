@@ -1,0 +1,37 @@
+# 技术
+- vue / vuex / 配置路由
+- Element
+- es6
+- webpack
+- scss
+
+# 执行项目
+- 进入mt-vue文件夹 运行npm run dev
+- http://localhost:8080/#/
+
+# 进入布局  default.vue文件（展示布局）
+# layout文件夹下的default.vue文件（展示布局） 
+    - 引入header文件夹下的index组件
+    - 引入footer文件夹下的index组件
+# header文件夹 （头部固定组件）  
+    - index组件 引入topBar和searchBar组件
+    - topBar组件 引入geo和nav组件
+    - geo和nav写好的头部的内容组件
+    - searchBar写好搜索区的内容组件
+# footer文件夹 （尾部固定组件）
+    - index组件
+# page文件夹 （主体组件 不固定的）
+    - index组件 
+# 配置路由文件
+    - 嵌套首页主体的路由  把page文件夹下的index组件（主体组件 需要变动的）插入到defaultPage路由内
+    - 嵌套城市页面主体的路由 把page文件夹下的changeCity组件 插入到defaultPage路由内 与 index组件同级
+# 首页主体组件
+    - components -> index -> menu组件（左侧部分 导航栏组件） 
+    - components -> index -> life组件（右侧右侧 图片和轮播图和用户登录） silde组件（轮播图组件）
+    - components -> index -> container组件（商品展示部分）
+# 切换城市页面主体组件
+    - page文件夹 -> changeCity组件 引入 (components -> changeCity -> province组件)
+# 商品展示页面 主体组件
+    - page文件夹 -> goodsList组件 引入(components -> products -> crumbs组件)
+    - 需要利用vuex组件解决子组件之间的传递数据的问题  npm install vuex -D
+    - store.js
