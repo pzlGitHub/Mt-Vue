@@ -1,0 +1,56 @@
+vue
+es6
+webpack
+
+开发工具
+vue脚手架
+2.*版本的会把所有的文件展示出来
+cnpm install -g vue-cli
+
+vue-cli  去官网能下载3.0版本
+npm install -g @vue/cli
+
+用2.*版本的会把所有的文件展示出来
+
+创建项目使用的配置是什么?  /  项目名称
+webpack
+
+创建vue项目的语句
+vue init webpack mt-app
+
+名称 
+描述 
+作者名 
+项目需不需要压缩（1） 
+是否要配置路由 yes
+选择标准的代码规范  yes
+选择代码规范的配置 （1）
+是否构建测试项目的工具 no
+是否构建测试项目的目录 no
+下载依赖用  NPM
+
+项目构建完成
+
+了解文件有什么东西
+REAOME.md  		项目说明文件
+package.json  		配置
+.gitignore 			上传到github会忽略的文件
+.eslintrc.js 			代码规范的配置
+babelrc			就是识别es6代码的
+build文件夹 
+webpack.base.conf.js  	webpack基础的配置内容  
+webpack.dev.conf.js 		生产环境的webpack配置
+vue-loader.conf.js 		vue的配置文件
+src文件夹
+assets 			放css/less/图片/字体库
+components 		放组件
+router			配置路由
+
+REAOME.md    语句：
+npm run dev 为开发环境打包，拿到地址
+npm run build 为生产环境打包，构建静态的文件
+
+让js代码也规范的操作是
+package.json 文件内把 找到start对象的lint属性在eslint后面加上--fix 就行
+
+
